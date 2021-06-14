@@ -13,6 +13,8 @@ import 'package:argon_flutter/widgets/card-square.dart';
 import 'package:argon_flutter/widgets/drawer.dart';
 import 'package:http/http.dart' as http;
 
+import 'custom/BookReader.dart';
+
 class Home extends StatelessWidget {
   // var itemBooks = BookItem();
   // final GlobalKey _scaffoldKey = new GlobalKey();
@@ -55,7 +57,19 @@ class ListItem extends StatelessWidget {
               stock: true,
               price: books[index].harga.toString(),
               img: books[index].cover,
-              readPress: () {});
+              readPress: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BookReader(),
+                    // Pass the arguments as part of the RouteSettings. The
+                    // DetailScreen reads the arguments from these settings.
+                    settings: RouteSettings(
+                      arguments: books[index],
+                    ),
+                  ),
+                );
+              });
         });
   }
 }
