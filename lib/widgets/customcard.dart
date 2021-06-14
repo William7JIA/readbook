@@ -61,7 +61,7 @@ class CustomCard extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(left: 1.0),
                             child: Text(
-                                stock == true ? 'In Stock' : 'Not In Stock',
+                                stock == true ? 'Book Ready' : 'Book Not Ready',
                                 style: TextStyle(
                                     color: stock == true
                                         ? ArgonColors.success
@@ -111,7 +111,7 @@ class CustomCard extends StatelessWidget {
                           child: Padding(
                               padding: EdgeInsets.only(
                                   left: 5.0, right: 5.0, top: 12, bottom: 12),
-                              child: Text("SAVE FOR LATER",
+                              child: Text("Buy",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w700,
                                       fontSize: 11.0))),
