@@ -53,7 +53,7 @@ class ListItem extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-            height: 220,
+            height: 260,
             width: double.maxFinite,
             child: Card(
               elevation: 5,
@@ -88,8 +88,7 @@ class ListItem extends StatelessWidget {
                                         height: 30,
                                       ),
                                       Text(
-                                        books[index].namabuku +
-                                            books[index].cover,
+                                        books[index].namabuku,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 11),
