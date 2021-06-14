@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
           "/dashboad": (BuildContext context) => new Dashboard(),
           "/product": (BuildContext context) => new Dashboard(),
           "/addproduct": (BuildContext context) => new Dashboard(),
+          "/readBook": (BuildContext context) => new Dashboard(),
         });
   }
 }

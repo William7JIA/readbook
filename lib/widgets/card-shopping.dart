@@ -84,7 +84,7 @@ class CardShopping extends StatelessWidget {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 8.0),
-                            child: Text("\$$price",
+                            child: Text("\Rp$price",
                                 style: TextStyle(
                                     color: ArgonColors.primary,
                                     fontSize: 11,
@@ -109,7 +109,7 @@ class CardShopping extends StatelessWidget {
                           child: Padding(
                               padding: EdgeInsets.only(
                                   left: 5.0, right: 5.0, top: 12, bottom: 12),
-                              child: Text("DELETE",
+                              child: Text("Read",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 11.0))),
